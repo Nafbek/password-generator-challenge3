@@ -2,7 +2,7 @@
 
 ## Description
 
-The aim of this project is to generate a random password for users based on the character type they choose. Four general character types are defined to generate a password from. ...........
+The aim of this project is to generate a random password for users based on the character type they choose. Four general character types are defined to generate a password from. The project consists of two main functions, one that generates the random password while the second function writes a password in a browser. It also includes logic to validate user's input, ensure the inclusion of the character type chosen by user in the generated password, and to generate a password when conditions are met.
 
 
 ## User Story
@@ -36,7 +36,7 @@ You can clone this particular repository (follow this link  https://github.com/N
 
 ## Usage
 
-After you have opened the 'index.html' file in your prefered browser, click the 'Generator Password' button to begin generating a password. You will then be prompted to chose the length of the password (with a minimum 8 and maximum 128 characters) and the character types you would like to include. If the requirements are fulfilled, the computer will generate a password and display it inside the 'Generate Password' box.
+After you have opened the 'index.html' file in your prefered browser, click the 'Generator Password' button to begin generating a password. You will then be prompted to choose the length of the password (with a minimum 8 and maximum 128 characters) and the character types you would like to include in your password. If the requirements are fulfilled, the computer will generate a password and display it inside the 'Generate Password' box.
 
 
 The mock-up of the page can be viewed either by double clicking on the file "Animation.gif" in the repository or by clicking on the follwing syntax link.
@@ -48,9 +48,9 @@ The mock-up of the page can be viewed either by double clicking on the file "Ani
 
 ## Credits
 
-I would like to appreciate Philip Clark, a Teaching Assistant, for his constructive feedback and suggestions. Particularly, he recommended using different variable names for the characters type used to generate a random password and the user's preference. In addition to this, he advised me to apply logic that  ensures at least one user's preference is included.  
+I would like to appreciate Philip Clark, a Teaching Assistant, for his constructive feedback and suggestions. Particularly, he recommended using different variable names for the characters type used to generate a random password and the user's preference. In addition to this, he advised me to array and to apply a logic that ensures the inclusion of character type chosen by user in the generated password.  
 
-Overall, I am often grateful to open source, https://www.w3schools.com/js/js_function_definition.asp . 
+Lastly, I am often grateful to open source, https://www.w3schools.com/js/js_function_definition.asp . 
 
 ## License
 
