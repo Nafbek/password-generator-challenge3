@@ -42,15 +42,12 @@ After you have opened the 'index.html' file in your prefered browser, click the 
 The mock-up of the page can be viewed either by double clicking on the file "Animation.gif" in the repository or by clicking on the follwing syntax link.
 
 
-
 ![alt text](Animation.gif)
 
 
 ## Credits
 
-I would like to appreciate Philip Clark, a Teaching Assistant, for his constructive feedback and suggestions. Particularly, he recommended using different variable names for the characters type used to generate a random password and the user's preference. In addition to this, he advised me to array and to apply a logic that ensures the inclusion of character type chosen by user in the generated password.  
-
-Lastly, I am often grateful to open source, https://www.w3schools.com/js/js_function_definition.asp . 
+I would like to appreciate Philip Clark, a Teaching Assistant, for his constructive feedback and suggestions. Particularly, he recommended using different variable names for the characters type used to generate a random password and the user's preference. In addition to this, he advised me to use an array and apply a logic that ensures the inclusion of character type chosen by user in the generated password.  
 
 ## License
 
