@@ -8,7 +8,7 @@ generateBtn.addEventListener("click", writePassword);
 function writePassword() {
   lengthOfPassword = prompt("Write the preferred length of your password.\nIt should be at least 8 and atmost 128 characters.");
 
-  //Check whether the user input is valid and prompt user to choose their prefered character type
+  //Check whether the user input is valid, and prompt user to choose their prefered character type
   if(lengthOfPassword >=8 && lengthOfPassword <= 128){
     var iLikeNumber = confirm('would you like to include number?');
     var iLikeLowerCase = confirm('would you like to include lowercase?');
@@ -25,14 +25,13 @@ function writePassword() {
 }
 //Process the generation of password under certain conditions
 function generatePassword(length, iLikeNumber, iLikeLowerCase, iLikeUpperCase, iLikeSymbolChar){
-  //Type of characters used to generate password
+  //Declare variables-types of characters used to generate a password
   var numberChar = "0123456789";
   var lowerCaseChar= "abcdefghijklmnopqrstuvwxyz";
   var upperCaseChar= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var symbolChar= "/:;<=>?@[\]^_`{|}~";
   
-    
-  //Store character types chosen by the user
+  //Declare an array to store character types chosen by the user
   var charInclusion = [];
 
   //Check user's preference of character type and add it into an array
@@ -56,31 +55,24 @@ function generatePassword(length, iLikeNumber, iLikeLowerCase, iLikeUpperCase, i
     return "";  
   }else{
     //Store the generated password
-    var Password = "";
+    var password = "";
   
-    //Generate a random password with the inclusion of the character types 
+    //Generate a random password with the inclusion of at least one character from all the chosen character types 
     var charIndexAll;                              
-    for(var i =0; i<length; i++){
-      if (i<charInclusion.length){
-        charIndexAll =i;
-      }else{
-      charIndexAll =Math.floor(Math.random() * charInclusion.length);
-      }
-      var charIndex = Math.floor(Math.random() * charInclusion[charIndexAll].length)
-      Password += charInclusion[charIndexAll].charAt(charIndex);
+    for(var i =0; i<charInclusion.length; i++){
+      charIndexAll =i;
+      charIndexAll =Math.floor(Math.random() * charInclusion[i].length);
+      password += charInclusion[i].charAt(charIndex);
     }
-    return Password;
+    //Generate a password randomly until it meets the required length of character from the chosen character types
+    for (var i = charInclusion.length; i< length; i++){
+      charIndexAll =Math.floor(Math.random() * charInclusion.length);
+      var charIndex = Math.floor(Math.random() * charInclusion[charIndexAll].length);
+      password += charInclusion[charIndexAll].charAt(charIndex);
+    }
+      return password;
   }
-
+    
 }
 
 
-
-
-
-
-
-
-
-
- 
